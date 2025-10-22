@@ -1,0 +1,44 @@
+========================================
+RENDER ENVIRONMENT VARIABLES
+Copy these values exactly!
+========================================
+
+Variable 1:
+Key:   MONGODB_URI
+Value: mongodb+srv://patilsakshi072_db_user:Sakshi%40123@demo.tzdyfmv.mongodb.net/shopeasy?retryWrites=true&w=majority&appName=demo
+
+Variable 2:
+Key:   JWT_SECRET
+Value: your_super_secret_jwt_key_change_in_production
+
+Variable 3:
+Key:   JWT_EXPIRE
+Value: 7d
+
+Variable 4:
+Key:   NODE_ENV
+Value: production
+
+========================================
+HOW TO ADD THEM IN RENDER:
+========================================
+
+1. Go to: https://dashboard.render.com
+2. Click on "ShopEase-backend" service
+3. Click "Environment" in the left sidebar
+4. Click "Add Environment Variable" button
+5. Enter the Key and Value from above
+6. Repeat for all 4 variables
+7. Click "Save Changes"
+8. Wait for automatic redeployment (~2-3 minutes)
+
+========================================
+VERIFICATION:
+========================================
+
+After deployment completes, check the logs for:
+✅ "MongoDB Connected Successfully"
+
+If you see this, your backend is working!
+Your API will be live at:
+https://shopease-backend-075g.onrender.com
